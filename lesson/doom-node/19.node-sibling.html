@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next, Prev Sibling Element</title>
+</head>
+<body>
+    <h1>Next, Prev Sibling Element</h1>
+    <ul id="menu">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li class="current">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <script>
+        const current = document.querySelector('.current');
+        console.log(current.previousElementSibling.innerText);//item 2
+        console.log(current.nextElementSibling.innerText);//item 4
+    </script>
+</body>
+</html>

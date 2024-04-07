@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Element Loop</title>
+</head>
+<body>
+    <h1>Doom Element Loop</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      voluptatibus similique.
+    </p>
+    <h2>Heading 2.1</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      voluptatibus similique.
+    </p>
+    <h2>Heading 2.1</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
+      quidem perspiciatis soluta quis. Magni consequatur labore ullam
+      voluptatibus similique.
+    </p>
+    <script>
+      const h2Element = document.getElementsByTagName('h2');
+      console.log(h2Element);
+    // Cách 1
+    //   for(let i =0; i < h2Element.length; i++) {
+    //     h2Element[i].style.color = "yellow";
+    //   }
+
+    // Cách 2
+    for(let element of h2Element) {
+        element.style.color = 'red';
+    }
+    </script>
+</body>
+</html>

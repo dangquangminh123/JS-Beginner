@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove()</title>
+</head>
+<body>
+    <style>
+        .current {
+            color: red;
+        }
+    </style>
+    <h1>Remove()</h1>
+    <ul id="langs">
+        <li>HTML</li>
+        <li class="current">Css</li>
+        <li>Javasripts</li>
+    </ul>
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+
+        // Cách 1 là xóa hẳn chính bản thân nó
+        // current.remove();
+
+
+        // cách 2 Xóa 1 phần tử xuất phát từ cha của nó
+        langs.removeChild(current);
+    </script>
+</body>
+</html>

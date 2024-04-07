@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Setter Getter ES6</title>
+</head>
+<body>
+    <h1>Class Setter Getter</h1>
+    
+    <script>
+
+        class Student{
+            constructor(fullname, uni, std_year) {
+               this.fullname = fullname;
+               this.uni = uni;
+               this.std_year = std_year;
+            }
+            set setFullname(fullname){
+                this.fullname = fullname;
+            }
+            get getFullname(){
+                return this.fullname;
+            }
+        }
+
+        let my_info = new Student('Phan Văn Cương', 'Đại học Huế', '4');
+        my_info.setFullname = 'Phan Cương';
+        console.log(my_info.getFullname);
+    </script>
+</body>
+</html>

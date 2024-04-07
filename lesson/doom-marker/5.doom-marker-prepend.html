@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepend()</title>
+</head>
+<body>
+    <h1>Prepend() Javascripts</h1>
+    <ul id="menu">
+        <li>Home Page</li>
+        <li>About</li>
+    </ul>
+    <script>
+        // Thêm course, contact
+        const menu = document.getElementById('menu');
+
+        const li1 = document.createElement('li');
+        li1.textContent = 'course';
+
+        const li2 = document.createElement('li');
+        li2.textContent = 'contact';
+
+        
+        const li3 = document.createElement('li');
+        li3.textContent = 'Insert Prepend';
+
+        menu.append(li1, li2);
+// Thêm vào trước phần tử li đầu tiên
+        menu.prepend(li3);
+    </script>
+</body>
+</html>

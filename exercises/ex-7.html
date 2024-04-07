@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Images Hovers</title>
+</head>
+<body>
+    <style>
+        ul.products {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            max-width: 500px;
+        }
+        .product-item {
+            /* width: 300px; */
+            width: 45%;
+            height: 300px;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <h3>Thay đổi ảnh khi hover</h3>
+    <ul class="products">
+        <li class="product-item">
+            <img data-src-v2="./img/libazz-fashion-bag-2.jpeg"
+            data-src-v1="./img/libazz-fashion-bag-1.jpeg"
+            src="./img/libazz-fashion-bag-1.jpeg" /> 
+        </li>
+
+        <li class="product-item">
+            <img data-src-v2="./img/libazz-fashion-jacket-2.jpeg"
+            data-src-v1="./img/libazz-fashion-jacket-1.jpeg"
+            src="./img/libazz-fashion-jacket-1.jpeg" /> 
+       </li>
+    </ul>
+
+    <script>
+        const productItems = document.querySelectorAll('.product-item')
+
+        for (let productItem of productItems) {
+            productItem.addEventListener('mouseover', function () {
+                const srcV2 = this.querySelector('img').dataset.srcV2
+                this.querySelector('img').setAttribute('src', srcV2)
+            })
+            productItem.addEventListener('mouseout', function () {
+                const srcV1 = this.querySelector('img').dataset.srcV1
+                this.querySelector('img').setAttribute('src', srcV1)
+            })
+        }
+
+        // Cách 1 (chỉ dùng khi chỉ có 1 sản phẩm!)
+        // const BoxImg = document.querySelector('.box-img');
+        // BoxImg.addEventListener('mouseover', function () {
+        //     const srcV2 = this.querySelector('img').dataset.srcV2
+        //     this.querySelector('img').setAttribute('src', srcV2)
+        // })
+        // BoxImg.addEventListener('mouseout', function () {
+        //     const srcV1 = this.querySelector('img').dataset.srcV1
+        //     this.querySelector('img').setAttribute('src', srcV1)
+        // })
+    </script>
+</body>
+</html>

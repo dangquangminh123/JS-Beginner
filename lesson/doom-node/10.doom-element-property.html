@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị thuộc tính của một element</title>
+</head>
+<body>
+    <h1>Thay đổi giá trị thuộc tính của 1 elements</h1>
+    <img id="demo" class="test" lang="vi" src="../assets/buy1.jpg" alt="" srcset="" title="text" />
+
+    <script>
+        const demo = document.getElementById('demo');
+        
+        
+        //truy cập vào thành phần nào của elements thì mình chỉ việc elements.attr 
+        demo.title = "New images";
+
+    </script>
+</body>
+</html>

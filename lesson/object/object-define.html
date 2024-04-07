@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách định nghĩa một object trong js</title>
+</head>
+<body>
+    <h1>Cách định nghĩa một object trong js</h1>
+    <script>
+        let person = {
+            firstname: 'Phan Văn',
+            lastname: 'Cương',
+            age: 32,
+            gender: 'male'
+        }
+
+        // Cách 2
+        // let person = new Object();
+        // person.firstName = 'Phan Văn';
+        // person.lastName = 'Cương';
+        // person.age = 32;
+        // person.gender = "male";
+        // console.log(person);
+
+        /*
+            1. truy xuất vào thuộc tính của object
+            2. truy xuất vào thuộc tính qua vòng lặp
+            3. cập nhập giá trị thuộc tính của object
+            4. tạo thuộc tính mới cho object
+            5. delete thuộc tính trong object
+        */
+
+        //  1. truy xuất vào thuộc tính của object
+        console.log(person['firstname']);
+        // 2. truy xuất vào thuộc tính qua vòng lặp
+        for(x in person) {
+            console.log(x + ':' + person[x]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy xuất phần tử của mảng</title>
+</head>
+<body>
+    <h1>Truy xuất phần tử của mảng</h1>
+    <script>
+        let my_array = ['Cương', 'Phong', 'Tuấn'];
+        // document.write(my_array[2]);
+        // Trường hợp khi không biết trong mảng có tất cả là bao nhiêu phần tử mà lại muốn lấy phần tử cuối cùng trong mảng thì 
+        document.write(my_array[my_array.length -1]);
+        let list_even = [2, 8, 6, 22];
+        let list_number = [
+            [2, 8, 6, 22],
+            [3, 5, 11]
+        ];
+        // document.write(list_number[0]);
+        // document.write(list_number[0][0]);
+
+        let list_users = [{
+            name: 'Phan Văn Cương',
+            age: 32,
+            gender: 'male'
+        }, {
+            name: 'Phan Văn Tuấn',
+            age: 32,
+            gender: 'male'
+        }, {
+            name: 'Phan Văn Phong',
+            age: 32,
+            gender: 'male'
+        }];
+        document.write(list_users[0]);
+    </script>
+</body>
+</html>

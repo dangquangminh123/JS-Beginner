@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp phần tử mảng trong JS</title>
+</head>
+<body>
+    <h1>Sắp xếp phần tử mảng trong js</h1>
+    <script>
+        let my_array = ['a', 'h', 'k', 'b', 'e', 'c'];
+        console.log(my_array.sort());
+        let list_number = [2, 5, 4, 112, 6, 8];
+        let result = list_number.sort(function(a, b) {
+            // Sắp xếp tăng dần (thực hiện phép trừ sau đó so sánh hiệu từng phép tính 1)
+            // return a - b;
+            // Giảm dần
+            return b - a;
+        })
+        console.log(result);
+        // Sắp xếp đảo ngược mảng
+        console.log(result.reverse());
+    </script>
+</body>
+</html>

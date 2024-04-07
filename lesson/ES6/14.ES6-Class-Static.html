@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static In Class Js</title>
+</head>
+<body>
+    <h1>Static In Class Js</h1>
+    <Script>
+        class Person {
+            constructor(name){
+                this.name = name;
+            }
+            static sayHi(x){
+                return `Xin chào ${x.name}`;
+            }
+        }
+        let my_info = new Person('Cương');
+        console.log(Person.sayHi(my_info));
+    </Script>
+</body>
+</html>

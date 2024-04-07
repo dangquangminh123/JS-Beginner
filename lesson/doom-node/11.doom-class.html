@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Doom ClassList</title>
+</head>
+<body>
+    <h1 id="demo" class="class-1 class-2 class-3">My title</h1>
+    <script>
+        const demo = document.getElementById('demo');
+        // console.log(demo.classList[0]);
+        demo.classList[0] = 'class-new';
+        // console.log(demo.classList[0]);
+        demo.classList.add('class-new');
+        // console.log(demo.classList);
+        demo.classList.remove('class-1');
+        // console.log(demo.classList);
+        // toggle là nếu đã có class đó thì xóa đi, còn nếu chưa có thì thêm vào
+        demo.classList.toggle('open');
+        demo.classList.replace('open','show');
+        console.log(demo.classList);
+    </script>
+</body>
+</html>

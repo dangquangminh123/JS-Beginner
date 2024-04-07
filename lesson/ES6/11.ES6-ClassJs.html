@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Js</title>
+</head>
+<body>
+    <h1>Class Js</h1>
+    <div id="root"></div>
+    <script>
+        class User {
+            // Thuộc tính
+            // Phương thức
+            constructor(fullname) {
+                this.fullname = fullname;
+            }
+            show() {
+                return `Xin chào: ${this.fullname}`;
+            }
+            render() {
+                document.getElementById('root').innerHTML = this.show();
+            }
+        }
+
+        let my_info = new User('Phan Văn Cương');
+        my_info.render()
+
+        // let my_wife = new User('Trần Thu Hằng');
+        // console.log(my_wife.show());
+    </script>
+</body>
+</html>

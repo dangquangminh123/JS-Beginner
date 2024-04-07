@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa hoặc thêm phần tử vào trong mảng</title>
+</head>
+<body>
+    <h1>Xóa hoặc thêm phần tử vào trong mảng</h1>
+    <script>
+        let list_colors = ['red','blue','green','black','yellow'];
+        // Tham số đầu là vị trí phần tử bắt đầu xóa
+        // Tham số 2 là tổng số phần tử cần xóa, nếu không có tham số này thì sẽ xóa hết toàn bộ tính từ phần tử bắt đầu
+        list_colors.splice(2, 2);
+        // Trường hợp khi đã xóa và muốn chèn thêm phần tử mới vào vị trí đã xóa
+        list_colors.splice(2, 2, 'gray', 'orange');
+        console.log(list_colors);
+    </script>
+</body>
+</html>

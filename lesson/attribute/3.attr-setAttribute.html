@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute() Js</title>
+</head>
+<body>
+    <a href="" title="Khóa học Js Beginner" count="988">Js Beginner</a>
+
+    <script>
+        const aElement = document.querySelector('a')
+        console.log(aElement.count)
+        console.log(aElement.getAttribute('count'));//Lấy giá trị count
+        aElement.setAttribute('count', 1988);//Set lại giá trị count
+        console.log(aElement.getAttribute('count'));
+
+        // Tạo thuộc tính author
+        aElement.setAttribute('author','Phan Văn Cương');
+        console.log(aElement.getAttribute('author'));
+    </script>
+</body>
+</html>

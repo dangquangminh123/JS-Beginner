@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator for Array</title>
+</head>
+<body>
+    <h1>Spread Opearator For Array</h1>
+    <script>
+        // Thu gom lại thành 1 mảng mới
+        // Spread operator {...}
+        // 1. embed element
+        // let first_array = [4, 6, 10];
+        // 4, 6, 10, 34, 56
+        // let second_array = [1, 3, ...first_array, 34, 56];
+        // document.write(second_array);
+
+        // 2. copy array
+    //    let new_array = [...first_array];
+    //    document.write(new_array);
+
+        // 3. contact array
+        let new_array = [ ...second_array, ...first_array];
+        document.write(new_array);
+    </script>
+</body>
+</html>

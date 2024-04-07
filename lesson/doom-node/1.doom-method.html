@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom methods</title>
+</head>
+<body>
+    <!-- Method: Hành động có thể thực thi lên các element
+properties:Giá trị có thể thiết lập và thay đổi lên 1 element -->
+    <h1>Doom methods</h1>
+    <p id="demo">My text</p>
+    <script>
+        const demo = document.getElementById('demo')
+        // demo.innerText = 'Học lập trình web đi làm unitop.vn';
+        // InnerText chỉ thay đổi được giá trị text trong thẻ html đó nhưng ko thay đổi đc thẻ html
+        // innerHTML thì có thể thay đổi cả text và html
+        demo.innerHTML = "<b style='color: red;'>Học lập trình web đi làm unitop.vn</b>";
+    </script>
+</body>
+</html>

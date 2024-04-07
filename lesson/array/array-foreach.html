@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt mảng và cập nhập những giá trị mảng bằng foreach trong JS</title>
+</head>
+<body>
+    <h1>Duyệt mảng bằng foreach trong JS</h1>
+    <script>
+        let my_array = [1, 2, 3, 4, 8, 10, 22];
+        let t = 0;
+        // for(let x of my_array) {
+        //     t += x;
+        // }
+        my_array.forEach(function(x, index){
+            t += x;
+            document.write(index + ':' + x + "<br>");
+        });
+        document.write("tổng:" + t);
+
+
+        // Cập nhập giá trị mảng bằng forEach
+        my_array.forEach(function(x, index, arr){
+            arr[index] = x *15;
+        });
+        console.log(my_array);
+
+
+        // Cách viết tách rời hàm trong js
+        function my_function(currentValue, index, arr) {
+            arr[index] = currentValue * 15;
+        }
+        my_array.forEach(my_function);
+    </script>
+</body>
+</html>

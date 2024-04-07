@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendchild()</title>
+</head>
+<body>
+    <h1>appendchild()</h1>
+    <script>
+        const body = document.body;
+        const divWrapper = document.createElement('div');
+        divWrapper.id = 'wrapper';
+        divWrapper.className = 'text-center';
+        // divWrapper.innerText = 'Content div';
+
+        const p = document.createElement('p');
+        p.innerText = "Content p";
+
+        const h1 = document.createElement('h1');
+        h1.innerText = "Heading 1";
+
+        const ul = document.createElement('ul');
+        const li1 = document.createElement('li');
+        li1.innerText = "Item 1";
+        const li2 = document.createElement('li');
+        li2.innerText = "Item 2";
+
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        
+        divWrapper.appendChild(h1);
+        divWrapper.appendChild(p);
+        divWrapper.appendChild(ul);
+        body.appendChild(divWrapper);
+    </script>
+</body>
+</html>

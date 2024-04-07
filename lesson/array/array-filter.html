@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách lọc phần tử mảng với FILTER JS</title>
+</head>
+<body>
+    <h1>Cách lọc phần tử mảng với filter js</h1>
+    <script>
+        // Trả về một mảng với giá trị bao gồm các phần tử mảng thỏa mãn một hàm cho trước (giá trị trả về true)
+        let list_number = [10, 45, 32, 5, 9, 126]
+        let result;
+        // Lọc các phần tử là số lẻ và cho vào 1 mảng mới
+        function check_odd(k) {
+            return k % 2 != 0;
+        }
+
+        result = list_number.filter(check_odd);
+       document.write(result);
+    </script>
+</body>
+</html>

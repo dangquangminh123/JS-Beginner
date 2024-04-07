@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage Js</title>
+</head>
+<body>
+    <h1>Localstorage Js</h1>
+    <script>
+        // Lưu thông tin trên trình duyệt
+        /*
+            Mỗi domain mỗi file localStorage, dữ liệu được chuyển sang string khi lưu
+        */ 
+    // Set
+    localStorage.setItem('fullname','Phan Văn Cương');
+    localStorage.setItem('age', 35);
+
+    // Get
+    document.write(localStorage.getItem('fullname'));
+    document.write(localStorage.getItem('age'));
+
+    // Remove
+    // localStorage.removeItem('fullname');
+
+    // Clear (xóa tất cả thông tin trong localStorage)
+    // localStorage.clear();
+    </script>
+</body>
+</html>

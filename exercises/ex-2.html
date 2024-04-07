@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS 2</title>
+</head>
+<body>
+    <h1>Bài tập JS 2</h1>
+    <script>
+        // Xếp loại học lực theo thang điểm 10
+        // input: mark = 5
+        // output: Trung bình
+        let mark = 9;
+        if(mark >= 0 && mark <= 10) {
+            // Xử lý phân loại học lực của học sinh
+            if(mark < 4) {
+                document.write("Yếu");
+            } else if(mark < 5) {
+                document.write("Trung bình");
+            }else if(mark >5 && mark < 8) {
+                document.write("Khá")
+            }else {
+                document.write("Giỏi");
+            }
+        } else {
+            alert('Điểm số phải lớn hơn bằng 0 và nhỏ hơn hoặc bằng 10')
+        }
+    </script>
+</body>
+</html>

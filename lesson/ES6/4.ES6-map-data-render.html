@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array map render HTML</title>
+  </head>
+  <body>
+    <h1>Array Map Render HTML</h1>
+    <style>
+      ul.products {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .product-thumb img {
+        max-width: 100%;
+        display: block;
+      }
+      ul.products .product-item .product-name {
+        display: block;
+        padding: 5px 0px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+      }
+
+      ul.products .product-item .product-name:hover {
+        color: #f00;
+      }
+    </style>
+    <ul class="products">
+      <!-- <li>
+            <div class="product-item">
+                <a href="#" class="product-thumb">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/289691/TimerThumb/iphone-14-pro-256gb-(54).jpg"
+                     alt="" />
+                </a>
+                <a href="#" class="product-name">Iphone 13 Pro Max</a>
+                <span>RAM: 6 GB</span>
+                <span>Giá: 27.790.000</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-item">
+                <a href="#" class="product-thumb">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/240259/TimerThumb/iphone-14-(60).jpg"
+                     alt="" />
+                </a>
+                <a href="#" class="product-name">Iphone 13 Pro Max</a>
+                <span>RAM: 6 GB</span>
+                <span>Giá: 27.790.000</span>
+            </div>
+        </li> -->
+    </ul>
+    <script>
+      const productsElement = document.querySelector(".products");
+      let products = [
+        {
+          id: 1,
+          url: "#",
+          product_name: "Iphone 13 Pro Max",
+          ram: "6 GB",
+          price: "27.790.000",
+          product_thumb:
+            "https://cdn.tgdd.vn/Products/Images/42/289691/TimerThumb/iphone-14-pro-256gb-(54).jpg",
+        },
+        {
+          id: 2,
+          url: "#",
+          product_name: "Iphone 13 Pro Max",
+          ram: "6 GB",
+          price: "27.790.000",
+          product_thumb:
+            "https://cdn.tgdd.vn/Products/Images/42/240259/TimerThumb/iphone-14-(60).jpg",
+        },
+      ];
+
+      // 2 xuất dữ liệu lên html với array
+      let productsHtml = products.map((element) => {
+        return `
+        <li>
+            <div class="product-item">
+                <a href="${element.url}" class="product-thumb">
+                    <img src="${element.product_thumb}"
+                     alt="" />
+                </a>
+                <a href="${element.url}" class="product-name">${element.product_name}</a>
+                <span>RAM: ${element.ram}</span>
+                <span>Giá: ${element.price}</span>
+            </div>
+        </li>   
+            `;
+      });
+      productsElement.innerHTML = productsHtml.join("");
+    </script>
+  </body>
+</html>

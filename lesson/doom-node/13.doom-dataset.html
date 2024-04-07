@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOOM DataSet</title>
+</head>
+<body>
+    <div id="user" data-id="8892" data-username="phancuong.qt" data-age="35" data-date-of-birth="">Phan Văn Cương</div>
+    <script>
+        // data-set
+        const user = document.getElementById('user');
+        // element.dataset
+        // element.dataset.key
+        // element.dataset.key = value
+        console.log(user.dataset)
+        console.log(user.dataset.id);
+        user.dataset.dateOfBirth = '19/07/2001';
+
+        delete user.dataset.dateOfBirth;
+        console.log(user.dataset);
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring JS</title>
+</head>
+<body>
+    <h1>Destructuring JS</h1>
+    <script>
+        // 1. Nhận giá trị từ array, object
+        // let my_array = [3, 26, 18];
+        // let a = my_array[0];
+        // let b = my_array[1];
+        // let c = my_array[2];
+        // let [a, b, c] = my_array;
+        // console.log(`a = ${a}`);
+        // console.log(`b = ${b}`);
+        // console.log(`c = ${c}`);
+
+        // Object
+        // let my_obj = {
+        //     fullname: 'Phan Văn Cương',
+        //     email: 'support@unitop.vn'
+        // };
+        // let {fullname, email} = my_obj;
+        // console.log(fullname);
+        // console.log(email);
+
+        //2. Default Value
+        // let my_array = [3, 26, 18]
+        // let [a, b, c, d = 88] = my_array
+        // console.log(a);//3
+        // console.log(d);//88
+
+        // 3. ...rest
+        // let my_array = [3, 26, 18, 23, 45, 55]
+        // let [a, b, ...moreNumber] = my_array;
+        // console.log(moreNumber);// [18, 23, 45, 55]
+        
+        // 4. Bỏ qua phần tử
+        // let my_array = [3, 26, 18, 24]
+        // let [a, , c] = my_array;
+        // console.log(c);//18
+
+        // 5. Hoán đổi giá trị
+        // let a = 10; b = 15;
+        // [a, b] = [b, a];
+        // console.log(b);//10
+
+        // 6. Nhận giá trị từ function
+        let my_func = (a, b) => {
+            // return {a, b};
+            return [a, b];
+        }
+        // let {a, b} = my_func(24, 68);
+
+        let [a, b] = my_func(24, 68);
+        console.log(a);
+        console.log(b);
+    </script>
+</body>
+</html>

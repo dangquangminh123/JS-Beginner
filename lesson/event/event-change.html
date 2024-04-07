@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Change Js</title>
+</head>
+<body>
+    <h1>Event Change Js</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register Form</legend>
+            <label for="username">Username</label> <br />
+            <input type="text" id="username" autocomplete="off" /> <br />
+
+            <label for="password">Password</label> <br />
+            <input type="text" id="password" autocomplete="off" /> <br />
+
+            <label for="city">City</label> <br />
+
+            <select name="" id="city">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP.HCM</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Thành Phố Khác</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Login Now   ">
+        </fieldset>
+    </form>
+
+    <script>
+        const username = document.getElementById('username');
+        username.addEventListener('change', function(){
+            console.log(username.value);
+        });
+
+        const city = document.getElementById('city');
+        city.addEventListener('change', function(){
+            console.log(city.value);
+        })
+    </script>
+</body>
+</html>

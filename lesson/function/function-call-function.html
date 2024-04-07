@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 hàm gọi nhau cùng làm việc</title>
+</head>
+<body>
+    <h1>2 hàm gọi nhau cùng làm việc</h1>
+    <script>
+        // Tính tổng các số chẵn từ 1 đến n
+        function check_even(k) {
+            if(k % 2 == 0) return true;
+            return false;
+        }
+
+        function total_even(n) {
+            let t = 0;
+            for(let i =1; i <= n; i++) {
+                if(check_even(i)) {
+                    t += i;
+                }
+            }
+            return t;
+        }
+        document.write(total_even(10));
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Node Parent Element (multiple)</title>
+</head>
+<body>
+    <h1>Parent Node, Parent Element</h1>
+    <a href="#">Học lập trình để đi làm</a>
+    <ul id="main-menu">
+      <li>
+        <a href="">Item 1</a>
+        <ul class="sub-menu">
+          <li>
+            <a href="#">List Item 1.1</a>
+            <ul class="sub-menu">
+              <li><a href="#">List Item 1.1.1</a></li>
+              <li><a href="#">List Item 1.1.2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">List Item 1.2</a></li>
+        </ul>
+      </li>
+      <li>
+        <img src="" alt="" />
+      </li>
+      <li><a href="#">List Item 3</a></li>
+      <li><a href="#">List Item 4</a></li>
+      <li><a href="#">List Item 5</a></li>
+    </ul>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+      voluptas doloremque amet reiciendis officiis mollitia nulla perspiciatis,
+      sint, nemo aut quo aperiam sunt debitis quis.
+    </p>
+    <script>
+        // const h1Node = document.querySelector('h1');
+        // console.log(h1Node.nodeName);
+        // // console.log(h1Node.parentNode); //body
+        // const aNode = document.querySelector('a');
+        // // console.log(aNode.nodeName);
+        // // console.log(aNode.parentNode);//body
+        // const main_menu = document.getElementById('main-menu');
+        // // console.log(main_menu.nodeName);
+
+        // const subMenu = document.querySelector('.sub-menu');
+        // console.log(subMenu.parentNode);//li
+
+        const aElement = document.querySelector('.sub-menu li a')
+        // closest là truy cập đến phần tử cấp cha  mà mình muốn (là từ vị trí con thấp nhất truy cập đến vị trí phần tử cha bất cứ bậc nào)
+        aElement.closest('#main-menu').style.background = 'yellow';
+    </script>
+</body>
+</html>

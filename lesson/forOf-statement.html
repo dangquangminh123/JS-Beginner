@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp for of trong js</title>
+</head>
+<body>
+    <h1>vòng lặp For of trong js</h1>
+    <script>
+        let person = {
+            fullname: 'Phan Văn Cương',
+            age: 32,
+            gender: 'male'
+        }
+
+        for(let key in person) {
+            document.write(key + ': ' + person[key] + "<br>");
+        }
+
+        let myColor = ['red', 'green', 'black'];
+
+        for(let key in myColor) {
+            document.write(key + myColor[key] + "<br>");
+        }
+    </script>
+</body>
+</html>

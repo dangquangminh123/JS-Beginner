@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc vòng lặp for In trong js</title>
+</head>
+<body>
+    <h1>Cấu trúc vòng lặp for In trong js</h1>
+    <script>
+        let list_number = [2, 4, 6, 7, 9];
+        let t = 0;
+        
+        for(let value of list_number) {
+            if(value % 2 == 0) {
+                t += value;
+            }
+        }
+        document.write(t);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET và GET trong Object</title>
+</head>
+<body>
+    <h1>Get và Set trong Object</h1>
+    <script>
+        // 1. Ý nghĩa setter và getter
+        // 2. Làm việc với get
+        // 3. Làm việc với set
+
+        let person = {
+            firstName: 'Phan',
+            lastName: 'Cương',
+            get fullName() {
+                return this.firstName + ' ' + this.lastName;
+            },
+            set fullName(info) {
+                info = info.split(' ');
+                this.firstName = info[0];
+                this.lastName = info[info.length - 1];
+            }
+        }
+        person.fullName = 'Phan Kim Anh';
+        document.write(person.fullName);
+    </script>
+</body>
+</html>

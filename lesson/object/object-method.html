@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thúc trong Object</title>
+</head>
+<body>
+    <h1>Phương thúc trong Object</h1>
+    <script>
+        // 1. Định nghĩa một phương thức
+        // 2. Toán tử this trong Object
+        // 3. thêm một phương thức vào Object
+        let number = {
+            a: 12,
+            b: 25,
+            sum: function() {
+                return this.a + this.b;
+            }
+        };
+        number.minus = function() {
+            return this.a - this.b;
+        }
+
+        document.write(number.minus());
+    </script>
+</body>
+</html>

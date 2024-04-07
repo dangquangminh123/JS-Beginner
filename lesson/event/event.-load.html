@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Event Js</title>
+</head>
+<body>
+    <!-- onload="alert('Web Page loaded!')" -->
+    <h1>Load Event Js</h1>
+    <!-- cách 1 -->
+    <!-- <img src="../assets/buy1.jpg" onload="alert('Img Loaded')" style="max-width: 100%;" alt=""> -->
+
+    <img src="../assets/buy1.jpg" style="max-width: 100%;" alt="">
+    <script>
+        // Kích hoạt khi nội dung được load xong
+        // cách 1
+        // window.addEventListener('load', function(){
+        //     alert('Window Loaded');
+        // })
+
+        //cách 2
+        const imgElement = document.querySelector('img');
+        imgElement.addEventListener('load', function(){
+            alert('Img Loaded and remove loading icons');
+        });
+    </script>
+</body>
+</html>

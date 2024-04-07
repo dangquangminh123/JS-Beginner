@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Element Event</title>
+</head>
+<body>
+    <h1>This Element Event JS</h1>
+
+    <script>
+        function show() {
+            console.log(this.innerText);
+        }
+        const h1 = document.querySelector('h1');
+        h1.addEventListener('click', function(){
+            this.innerText = 'Clicked!';
+            this.parentNode.style.background = 'yellow';
+        });
+    </script>
+</body>
+</html>

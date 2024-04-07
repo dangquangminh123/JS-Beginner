@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Arrow Function</title>
+</head>
+<body>
+    <h1>ES6 Arrow Function</h1>
+    <script>
+        // Cách 1 thông thường
+        // function sayHi() {
+        //     return "Xin chào!";
+        // }
+
+        // function sayHi(name) {
+        //     return `Xin chào ${name}`;
+        // }
+        
+        // Cách 2 thông thường
+        // let sayHi = function() {
+        //     return "Xin chào!";
+        // }
+
+        // Cách 3 arrow function
+        // let sayHi = () => {return "Xin chào!"};
+        let sayHi = (name) => {return `Xin chào ${name}`};
+        document.write(sayHi('Cương'));
+
+        let h1Element = document.querySelector('h1');
+        h1Element.addEventListener('click', () => {
+            alert('Xin Chào')
+        })
+    </script>
+</body>
+</html>

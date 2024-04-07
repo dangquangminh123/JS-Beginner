@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAfter()</title>
+</head>
+<body>
+    <style>
+        .current {
+            color: red;
+        }
+    </style>
+    <h1>insertAfter() Javascripts</h1>
+    <ul id="langs">
+        <li>HTML</li>
+        <li class="current">Css</li>
+        <li>Javasripts</li>
+    </ul>
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+
+        const liNew = document.createElement('li');
+        liNew.textContent = 'Php';
+        //Thêm 1 phần tử vào trước 1 phần tử ta đang xác định
+        function insertAfter(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+        }
+
+        insertAfter(liNew, current);
+    </script>
+</body>
+</html>

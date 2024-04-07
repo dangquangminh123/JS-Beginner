@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doom Element Selector</title>
+  </head>
+  <body>
+    <h1>Doom Element Selector</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      accusantium, soluta earum nisi, illum aut non?
+    </p>
+    <h2>Heading 2.1</h2>
+    <ul>
+      <li class="hightlight"><a href="#">Html Css</a></li>
+      <li><a href="#">Javascripts</a></li>
+      <li class="hightlight"><a href="#">Php</a></li>
+    </ul>
+    <h2 class="hightlight">Heading 2.2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      accusantium, soluta earum nisi, illum aut non?
+    </p>
+    <h2>Heading 2.3</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus
+      id, esse sint sit eos. Libero veniam excepturi quisquam fuga ea, esse modi
+      accusantium, soluta earum nisi, illum aut non?
+    </p>
+    <script>
+        // QuerySelector
+        // document.querySelector('p').style.color = "red";
+        // querySelectorAll
+        const pElements = document.querySelectorAll('p');
+        console.log(pElements);
+
+        for(let element of pElements) {
+            element.style.color = "red";
+        }
+
+        // document.querySelector('ul li').style.background = "yellow";
+
+        const liHightlight = document.querySelectorAll('ul .hightlight');
+        for(let element of liHightlight) {
+            element.style.background = "orange";
+        }
+    </script>
+  </body>
+</html>

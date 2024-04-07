@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm và xóa phần tử ra khỏi mảng</title>
+</head>
+<body>
+    <h1>Thêm và xóa phần tử ra khỏi mảng</h1>
+    <script>
+        // Cách 1
+        // let list_users = ['Cương', 'Phong', 'Tuấn'];
+        // list_users.push('Hằng');
+        // list_users.unshift('Linh');//thêm phần tử vào đầu mảng
+
+        // // Cách thêm 2
+        // let list_number = [2, 3, 4, 45, 66, 88, 123, 345, 26];
+        // let list_even = [];
+        // for(let value of list_number) {
+        //     if(value % 2 == 0) {
+        //         list_even.push(value);
+        //     }
+        // }
+        // console.log(list_even);
+
+        // Xóa phần tử
+        let list_users = ['Cương', 'Phong', 'Tuấn']
+        list_users.shift();//Xóa phần tử đầu trong mảng
+        list_users.pop();//Xóa phần tử ở cuối mảng
+    </script>
+</body>
+</html>

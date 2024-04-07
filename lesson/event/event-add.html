@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện add elements</title>
+</head>
+<body>
+    <h1>Sự kiện add Elements</h1>
+    <!-- Cách 1 inline element -->
+    <!-- <button id="btn" onclick="show();">Click me</button> -->
+
+    <!-- Cách 2 -->
+    <button id="btn">Click me</button>
+    <script>
+         // Cách 1 (chỉ thực hiện 1 sự kiện duy nhất)
+        function show(){
+            alert('Button Clicked!');
+        }
+
+        // Cách 2 (chỉ thực hiện 1 sự kiện duy nhất)
+        const btnElement = document.getElementById('btn');
+        btnElement.onclick = show;
+
+        // Cách 3 AddEventListener (cách này thường kích hoạt nhiều sự kiện)
+        btnElement.addEventListener('click', function(){
+            alert('CLick 1');
+        });
+        btnElement.addEventListener('click', function(){
+            alert('CLick 2');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preventDefault() Js</title>
+</head>
+<body>
+    <h1>preventDefault() Js</h1>
+    <a href="">Unitop.vn</a>
+
+    <script>
+        const aElement = document.querySelector('a');
+        aElement.addEventListener('click', function(e){
+            console.log(aElement.innerText);
+            e.preventDefault();
+            
+        })
+    </script>
+</body>
+</html>
