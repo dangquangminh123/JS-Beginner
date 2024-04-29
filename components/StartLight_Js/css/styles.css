@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: top 0.6s;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.menu-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    font-family: merienda;
+}
+
+.menu-wrapper nav {
+    float: right;
+}
+
+.right-nav {
+    overflow: hidden;
+    list-style: none;
+}
+
+.right-nav li {
+    float: left;
+    margin-left: 1em;
+}
+
+.right-nav li a{
+    color: #000;
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner-area {
+    height: 100vh;
+    background-image: url('../../images/bg-images.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+

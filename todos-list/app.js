@@ -2,35 +2,47 @@ const TODOLIST_APP_UNITOP = "TODOLIST_APP_UNITOP";
 // tên công việc - trạng thái công việc
 let data = [
   {
-    task: "HTML CSS 21 ngày",
+    task: "ReactJs Ultimate Project Test Wizz",
     is_complete: true,
   },
   {
-    task: "Learn JS Beginner Unitop.vn",
+    task: "ReactJs + ANTD Project Ecommerce Book",
+    is_complete: true,
+  },
+  {
+    task: "ReactJs Typescripts Projects Resume",
+    is_complete: true,
+  },
+  {
+    task: "Hoàn thành PHP MASTER course",
     is_complete: false,
   },
   {
-    task: "Làm chủ JQUERY siêu tốc",
+    task: "Hoàn thành NextJs Pro + ANTD",
     is_complete: false,
   },
   {
-    task: "Responsive Mastery website trên đa thiết bị!",
+    task: "Clone trang home https://demo2.themelexus.com/bexper/",
     is_complete: false,
   },
   {
-    task: "Bootstrap A-Z xây dựng giao diện",
+    task: "Clone trang home https://asiantripvn.com/",
     is_complete: false,
   },
   {
-    task: "Php Master từ căn bản đến nâng cao",
+    task: "Truy tìm 10 mẫu animation for Card Ui HTML CSS JS",
     is_complete: false,
   },
   {
-    task: "Laravel Pro Khóa lập trình web chuyên nghiệp",
+    task: "Tìm hiểu 5 tính năng cho components website with JS, JQUERY",
     is_complete: false,
   },
   {
-    task: "Triển khai dự án Web lên mạng",
+    task: "Hoàn Thành Khóa Laravel Pro",
+    is_complete: false,
+  },
+  {
+    task: "Clone các trang trong của https://demo2.themelexus.com/bexper/",
     is_complete: false,
   },
 ];
